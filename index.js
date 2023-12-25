@@ -21,7 +21,7 @@ function updateTimeAndDate() {
     if (day.startsWith('0')) {
         day = ' ' + day.slice(1);
     }
-    const displayStr = timeStr + amPm + month + day + year;
+    const displayStr = timeStr + amPm + day + month + year;
     for (let i = 0; i < 12; i++) {
         document.getElementById('char' + i + '1').textContent = displayStr[i];
         document.getElementById('char' + i + '2').textContent = displayStr[i];
